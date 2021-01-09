@@ -201,6 +201,7 @@ ul li:hover ul {
     left: 40%;
     border-style: none;
     background-color: rgb(235, 235, 235);
+    border-style: none;
 }
 .feeling-lucky {
     width: 120px;
@@ -210,6 +211,7 @@ ul li:hover ul {
     left: 50%;
     border-style: none;
     background-color: rgb(235, 235, 235);
+<<<<<<< HEAD
 }
 
 @media (max-width: 400px) {
@@ -327,3 +329,7 @@ ul li:hover ul {
         font-size: 22px;
         font-weight: medium;
 }
+=======
+    border-style: none;
+}
+>>>>>>> 1ba4fcb50550175f276678ec155c3a859048ccbc
