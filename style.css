@@ -3,12 +3,12 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 10px;
     text-align: right;
+}
+.container {
+    display: grid;
+    justify-items: end;
     position: relative;
-    right: -78%;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
+    right: 10vw;
 }
 #menu {
     width: 25px;
@@ -161,19 +161,19 @@ ul li:hover ul {
     top: 0px;
     left: 0px;
 }
+.body {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    top: 20vh;
+}
 .google-logo {
     width: 300px;
     height: auto;
-    position: relative;
-    left: 38%;
-    top: 100px;
 }
 .search-bar {
     width: 500px;
     height: 40px;
-    position: absolute;
-    top: 53%;
-    left: 390px;
     border-radius: 20px;
     border-color: lightgray;
     border-style: solid;
@@ -185,13 +185,6 @@ ul li:hover ul {
 }
 .search-bar:hover {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.199);
-}
-.mic {
-    width: auto;
-    height: 20px;
-    position: absolute;
-    top: 57%;
-    left: 932px;
 }
 .search {
     width: 110px;
@@ -211,41 +204,26 @@ ul li:hover ul {
     left: 50%;
     border-style: none;
     background-color: rgb(235, 235, 235);
-<<<<<<< HEAD
 }
 
-@media (max-width: 400px) {
-    .text-menu {
-        display: flex;
-        text-align: right;
-        position: relative;
-        top: -7vh;
-        left: 10vw;
+@media (max-width: 600px) {
+    .right-top-menu {
+        display: inline-block;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 25px;
-    }
-    #menu {
-        width: 10vw;
-        height: auto;
-        padding-top: 10vw;
-        position: relative;
-        top: -23vw;
-        left: 6vh;
-    }
-    #profile {
-        width: 12vw;
-        height: auto;
         padding-top: 10px;
-        position: relative;
-        top: -16vw;
-        left: 6vh;
-        border-radius: 50%;
+        text-align: right;
+        position: absolute;
+        right: 29vw;
+    }
+    a{
+        text-decoration: none;
+        color: black;
     }
     ul {
-        display: flex;
-        position: absolute;
-        left: 90vw;
-        top: 10vh;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 150px;
     }
     ul li {
         display: inline-block;
@@ -256,6 +234,7 @@ ul li:hover ul {
         color: black;
         padding: 5px;
         border: none;
+        text-align: center;
     }
     ul ul {
         position: absolute;
@@ -264,72 +243,172 @@ ul li:hover ul {
         background: rgb(255, 253, 253);
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.349);
         border-radius: 10px;
-        top: 4vw;
-        left: 20vw;
-        padding: 15px;
-        height: 60vh;
+        top: 8vh;
+        left: 8vw;
+        padding: 3px;
+        height: 23vh;
     }
     ul li:hover ul {
         display: block;
     }
+    #search-img {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 5px;
+    }
+    #maps {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 5px;
+        left: -3px;
+    }
+    #youtube {
+        width: auto;
+        height: 23px;
+        position: relative;
+        top: 7px;
+        left: 0px;
+    }
+    #play {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #drive {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #calendar {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #mail {
+        width: auto;
+        height: 12px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #translate {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #photo {
+        width: auto;
+        height: 23px;
+        position: relative;
+        top: 3px;
+        left: 0px;
+    }
+    #chrome {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #duo {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #news {
+        width: auto;
+        height: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    #meet {
+        width: auto;
+        height: 13px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
     .submenu {
         text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .container {
+        display: grid;
+        grid-auto-columns: auto;
+        justify-content: end;
     }
     .google-logo {
-        width: 90vw;
+        width: 65vw;
         height: auto;
         position: relative;
-        left: 85vw;
-        top: 80vh;
-        display: flex;
+        top: 20vh;
     }
     .search-bar {
-        width: 155vw;
-        height: 7vmax;
+        width: 70vw;
+        height: 40px;
         position: relative;
-        top: 88vh;
-        left: 43vw;
-        border-radius: 20px;
-        border-color: lightgray;
-        border-style: solid;
-        border-width: thin;
-        outline: none;
-        padding: 0px 25px;
-        margin: 14px;
-        font-size: 14px;
-        display: flex;
-    }
-    .mic {
-        width: auto;
-        height: 3.7vh;
-        position: absolute;
-        top: 112.6vh;
-        left: 210vw;
-        display: flex;
-    }
+        top: 20.5vh;
+        }
+        .search {
+            width: 29vw;
+            height: 5vh;
+            position: relative;
+            top: 41vh;
+            left: 16vw;
+            border-style: none;
+            background-color: rgb(235, 235, 235);
+            border-style: none;
+            display: grid;
+            align-self: center;
+        }
+        .feeling-lucky {
+            width: 33vw;
+            height: 5vh;
+            position: relative;
+            top: 36vh;
+            left: 50vw;
+            border-style: none;
+            background-color: rgb(235, 235, 235);
+            display: grid;
+            align-self: center;
+        }}
+        
+@media (min-width: 601px) {
     .search {
-        width: 48vw;
-        height: 8vmax;
+        width: 9vw;
+        height: 5vh;
         position: relative;
-        top: 93vh;
-        left: 80vw;
+        top: 20vh;
+        left: 40vw;
         border-style: none;
         background-color: rgb(235, 235, 235);
-        font-size: 22px;
-        font-weight: medium;
+        border-style: none;
+        display: grid;
+        align-self: center;
     }
     .feeling-lucky {
-        width: 55vw;
-        height: 8vmax;
+        width: 10vw;
+        height: 5vh;
         position: relative;
-        top: 85vh;
-        left: 135vw;
+        top: 15vh;
+        left: 50vw;
         border-style: none;
         background-color: rgb(235, 235, 235);
-        font-size: 22px;
-        font-weight: medium;
+        display: grid;
+        align-self: center;
+    }            
 }
-=======
-    border-style: none;
-}
->>>>>>> 1ba4fcb50550175f276678ec155c3a859048ccbc
